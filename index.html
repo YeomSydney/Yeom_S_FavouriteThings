@@ -13,12 +13,72 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="textBox">
-                <h1>HI, THERE!</h1>
-                <h2></h2>
-                <p>I'M SEUNGHYEON YEOM, TAKING INTERACTIVE MEDIA DESIGN AT FANSHAWE COLLEGE. <br> CLICK THE IMAGES AND DISCOVER WHAT I LIKE!</p>
+            <div class="profileHeader">
+                <!-- <div class="profile">
+                    <a href="./index.html"><img src=""></a>
+                </div> -->
+
+                <div class="textBlank">
+                    <!-- <h1>HI, THERE!</h1> -->
+                    <div class="waviy">
+                        <span style="--i:1">H</span>
+                        <span style="--i:2">I</span>
+                        <span style="--i:3">,</span>
+                        <span style="--i:4">T</span>
+                        <span style="--i:5">H</span>
+                        <span style="--i:6">E</span>
+                        <span style="--i:7">R</span>
+                        <span style="--i:8">E</span>
+                        <span style="--i:9">!</span>
+                    </div>
+                    <p>I'M SEUNGHYEON YEOM, TAKING INTERACTIVE MEDIA DESIGN AT FANSHAWE COLLEGE. <br> <span class="trigger">CLICK THE IMAGES AND DISCOVER WHAT I LIKE!</span></p>
+                </div>
             </div>
         </div>
+
+        <section id="popupBox">
+            <div class="clickImg">
+                <p>CLICK THE IMAGE!</p>
+            </div>
+            
+            <section id="favourite-things-list" class="favThings"></section>
+        
+            <div class="modal-parent">
+                <div class="modal">
+                    <section id="m-details" class="detailBox">
+                        <div class="thumbnail" id="thumbnail">
+                            <img id="button" src="./images/studio.jpg" alt="The images of the favourite things">
+                        </div>
+
+                        <h2 class="d-title">Taking Photos</h2>
+                        <h3 class="d-subTitle">Buildings, Sky, People, Anything Else...</h3>
+                        <p class="p-details">It's always enjoyable to take images and preserve memories with photographs. I enjoy shooting pictures because they allow me to save memories! Having a studio is my dream life!</p>
+                    </section>
+
+                    <section id="m-details" class="detailBox">
+                        <div class="thumbnail" id="thumbnail">
+                            <img id="button" src="./images/disney_studio.jpg" alt="The images of the favourite things">
+                        </div>
+
+                        <h2 class="d-title">Disney Studio</h2>
+                        <h3 class="d-subTitle">Moana, The Tangled, Frozen... <br> I Love all anime movies from Disney studio</h3>
+                        <p class="p-details">Disney was my childhood. Disney's animated film is one of my favourite memories that I will never be able to forget. With my brother, I used to mimic the characters in Disney anime films while we watched them. That was really enjoyable and memorable. I sometimes wish I could travel back in time!</p>
+                    </section>
+
+                    <section id="m-details" class="detailBox">
+                        <div class="thumbnail" id="thumbnail">
+                            <img id="button" src="./images/coffee.jpg" alt="The images of the favourite things">
+                        </div>
+
+                        <h2 class="d-title">Coffee</h2>
+                        <h3 class="d-subTitle">My Favourite Coffee, Americano from Starbucks!</h3>
+                        <p class="p-details">Coffee to me is like water. I especially enjoy Starbucks' Americano coffee. I enjoy working on assignments or watching movies while drinking coffee. One of my dreams to one day achieve is on a coffee trip!</p>
+                    </section>
+
+                <span class="closing">&times;</span>
+                </div>
+            </div>
+        </section>
 
         <template id="fav-template" class="fav-list favThings">
             <section class="fav-panel favThings">

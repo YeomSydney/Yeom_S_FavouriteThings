@@ -1,24 +1,63 @@
 body {
+    width: 100%;
+    height: 100%;
+
     .header {
         height: 720px;
         position: relative;
     }
 
-    .textBox {
+    .profileHeader {
         width: 100%;
         position: absolute;
         top: 40%;
     }
 
-    .textBox h1 {
-        font-size: 4rem;
-        font-weight: 900;
-        padding-bottom: 1.5rem;
+    @keyframes bouncing {
+        from, to { transform: scale(1, 1); }
+        25% { transform: scale(0.9, 1.1); }
+        50% { transform: scale(1.1, 0.9); }
+        75% { transform: scale(0.95, 1.05); }
     }
 
-    .textBox p {
+    .waviy {
+        position: relative;
+        -webkit-box-reflect: below -20px linear-gradient(transparent, #00000020);
+        font-size: 4rem;
+        padding-bottom: 1.5rem;
+        letter-spacing: -.3rem;
+    }
+
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-weight: 800;
+        color: #fff;
+        animation: waving 1.3s infinite;
+        animation-delay: calc(.1s * var(--i));
+    }
+
+    @keyframes waving {
+        0%,50%,100% {
+            transform: translateY(0)
+        }
+
+        30% {
+            transform: translateY(-20px)
+        }
+    }
+
+    .profileHeader p {
         font-size: 1.1rem;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
+        font-style: italic;
+        font-weight: 700;
+        color: white;
+    }
+
+    .trigger {
+        color: #1e41a3;
+        font-size: 1.4rem;
     }
 
     #favourite-things-list {
@@ -164,6 +203,18 @@ body {
 
     #popupBox {
         position: relative;
+        margin-bottom: 8rem;
+    }
+
+    .clickImg {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .favThings h2 {
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
     }
 
     .modal-parent{
@@ -180,7 +231,7 @@ body {
         flex-direction: row;
         justify-content: center;
 
-        background-color: #ffffff;
+        background-color: white;
         width: 80%;
         height: 50%;
         padding: 3rem;
@@ -196,7 +247,7 @@ body {
         font-size: 1.2rem;
 
         position: relative;
-        animation: 0.3s drop;
+        animation: .5s drop;
         margin-bottom: 100px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0, 0, 0, 0.20);
     }
@@ -207,7 +258,7 @@ body {
 
     .modal section h2 {
         margin: 1rem auto;
-        font-weight: 900;
+        font-weight: 500;
         color: #1e41a3;
         padding: 7px 10px;
     }
@@ -232,61 +283,28 @@ body {
         }
     }
     
-    .closing{
+    .closing {
         position: absolute;
+        background-color: #1e41a3;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
         right: 20px;
-        top: 5px;
-        font-size: 40px;
+        top: 2.5%;
+        padding-top: 3px;
+        font-size: 36px;
+        color: white;
         cursor: pointer;
+        transition: all .2s ease-in;
+    }
+
+    .closing:hover {
+        background-color: white;
+        color: #1e41a3;
+        box-shadow: .2rem .2rem 5px #1e41a330;
     }
     
     #section{
         transition: 2s;
     }
-
-    // =====================================================================================
-
-    
-
-    // ======================================================================================
-
-    // button{
-    //     all: unset;
-    //     background-color: #990000;
-    //     color: white;
-    //     padding: 15px 25px;
-    //     border-radius: 6px;
-    //     cursor: pointer;
-    // }
-
-    // .modal-modal {
-    //     position: fixed;
-    //     top: 0; left: 0;
-    //     width: 100%; height: 100%;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items : center;
-    // }
-    // .md_overlay {
-    //     background-color: rgba(0, 0, 0, 0.6);
-    //     width: 100%; height: 100%;
-    //     position: absolute;
-    // }
-    // .md_content {
-    //     width: 20%;
-    //     position: relative;
-    //     padding: 50px 100px;
-    //     background-color: white;
-    //     text-align: center;
-    //     border-radius: 6px;
-    //     box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0, 0, 0, 0.20);
-    // }
-    // h1 {
-    //     margin:0; 
-    //     padding: 5px;
-    // }
-    // .hidden {
-    //     display: none;
-    // }
-    // .modal_text { padding: 16px; }
 }
