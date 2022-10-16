@@ -1,0 +1,25 @@
+{
+    "Taking Photos": {
+        "title" : "Taking Photos",
+        "subTitle" : "subtitle",
+        "desc" : "ddd",
+        "thumbnail" : "studio.jpg",
+        "mainPic" : "studio.jpg"
+    },
+
+    "Disney Studio": {
+        "title" : "Disney Studio",
+        "subTitle" : "subtitle",
+        "desc" : "ddd",
+        "thumbnail" : "disney_studio.jpg",
+        "mainPic" : "disney_studio.jpg"
+    },
+
+    "Coffee": {
+        "title" : "Coffee",   
+        "subTitle" : "subtitle",
+        "desc" : "ddd",
+        "thumbnail" : "coffee.jpg",
+        "mainPic" : "coffee.jpg"
+    }
+}

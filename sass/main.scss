@@ -1,0 +1,13 @@
+// start with imports (order is important)
+@import "./modules/_reset.scss";
+@import "./modules/_vars.scss";
+
+// import mobile styles first
+@import "./modules/_defaults.scss";
+@import "./modules/_queries.scss";
+
+// component files next
+@import "./modules/_main.scss";
+
+// atomic files go here
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
