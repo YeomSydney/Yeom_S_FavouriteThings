@@ -1,25 +1,22 @@
 {
     "Taking Photos": {
         "title" : "Taking Photos",
-        "subTitle" : "subtitle",
-        "desc" : "ddd",
-        "thumbnail" : "studio.jpg",
+        "subTitle" : "Buildings, Sky, People, Anything Else...",
+        "desc" : "It's always enjoyable to take images and preserve memories with photographs. I enjoy shooting pictures because they allow me to save memories! Having a studio is my dream life!",
         "mainPic" : "studio.jpg"
     },
 
     "Disney Studio": {
         "title" : "Disney Studio",
-        "subTitle" : "subtitle",
-        "desc" : "ddd",
-        "thumbnail" : "disney_studio.jpg",
+        "subTitle" : "Moana, The Tangled, Frozen... I Love all anime movies from Disney studio",
+        "desc" : "Disney was my childhood. Disney's animated film is one of my favourite memories that I will never be able to forget. With my brother, I used to mimic the characters in Disney anime films while we watched them. That was really enjoyable and memorable. I sometimes wish I could travel back in time!",
         "mainPic" : "disney_studio.jpg"
     },
 
     "Coffee": {
         "title" : "Coffee",   
-        "subTitle" : "subtitle",
-        "desc" : "ddd",
-        "thumbnail" : "coffee.jpg",
+        "subTitle" : "My Favourite Coffee, Americano from Starbucks!",
+        "desc" : "Coffee to me is like water. I especially enjoy Starbucks' Americano coffee. I enjoy working on assignments or watching movies while drinking coffee. One of my dreams to one day achieve is on a coffee trip!",
         "mainPic" : "coffee.jpg"
     }
 }
