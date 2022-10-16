@@ -7,30 +7,11 @@ import { getData } from "./modules/dataMiner.js"
 
     let theThings = document.querySelector('#favourite-things-list'),
         theTemplate = document.querySelector('#fav-template').content;
-        // modalPopup = document.querySelector('.modal'),
-        // modalTemplate = document.querySelector('#m-details').content;
 
     const   clickMe = document.querySelector('#button'),
             modalParent = document.querySelector('.modal-parent'),
+            backgroundSec = document.querySelector('.favThings'),
             closing = document.querySelector('.closing');
-
-            // const openButton = document.getElementById("open");
-            // const modal = document.querySelector(".modal-modal");
-            // // const overlay = modal.querySelector(".md_overlay");
-            // const closeButton = modal.querySelector("button");
-
-            // const openModal = () => {
-            //     modal.classList.remove("hidden");
-            // }
-            // const closeModal = () => {
-            //     modal.classList.add("hidden");
-            // }
-
-            // openButton.addEventListener("click", openModal);
-            // closeButton.addEventListener("click", closeModal);
-
-    // let newWin = window.open("/", "hello", "width=200,height=200");
-    //     newWin.document.write("Hello, world!");
 
     // Gathering data from data.json
 
@@ -55,12 +36,13 @@ import { getData } from "./modules/dataMiner.js"
 
     function showBox(data) {
         modalParent.style.display = 'block'
-        // backgroundSec.style.filter = 'blur(10px)'
-        // clickMe.blur();
+        backgroundSec.style.filter = 'blur(5px)'
+        clickMe.blur();
     }
 
     function closeBox() {
         modalParent.style.display = 'none'
+        backgroundSec.style.filter = 'blur(0px)'
     }
 
     clickMe.addEventListener('click', showBox);
