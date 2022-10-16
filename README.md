@@ -1,7 +1,12 @@
 # Favourite Things
 
-## Wrriten By
+## Writen By
 Seunghyeon Yeom (0975764)
+
+## What I Like
+1. Taking photos
+2. Disney Studio
+3. Coffee
 
 ## MIT License
 Copyright 2022 Seunghyeon Yeom

@@ -49,4 +49,5 @@ import { getData } from "./modules/dataMiner.js"
     closing.addEventListener('click', closeBox);
 
     getData(`./data.json`, buildThings);
+    
 })();
